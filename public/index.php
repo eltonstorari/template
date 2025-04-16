@@ -1,17 +1,11 @@
-<?php   
+<?php 
+  
+  
+session_start();
 
-namespace App;
-
-$data = ['name' => 'Elton Storari'];
-ob_start();
-
-extract($data);
-
-require 'home.php';
+use app\framework\helpers\helpers;
+// Load the Composer autoloader
+ require  '../vendor/autoload.php';
 
 
-$content = ob_get_contents();
-
-ob_end_clean();
-
-var_dump($content); 
+routerExecute();

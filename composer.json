@@ -3,7 +3,10 @@
     "autoload": {
         "psr-4": {
             "app\\": "app/"
-        }
+        },
+        "files": [
+            "app/framework/helpers/helpers.php"
+        ]
     },
     "scripts": 
     {
